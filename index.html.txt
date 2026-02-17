@@ -1,0 +1,179 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>N N Detailing</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background-color: #f2f2f2;
+color: #333;
+line-height: 1.6;
+}
+header {
+background: linear-gradient(to right, #222, #444);
+color: white;
+padding: 40px 20px;
+text-align: center;
+}
+header h1 {
+margin: 0;
+font-size: 2.5em;
+}
+header p {
+margin: 10px 0;
+font-size: 1em;
+}
+header .highlight {
+font-size: 1.1em;
+color: #ff9900;
+margin-top: 15px;
+font-weight: bold;
+}
+nav {
+display: flex;
+justify-content: center;
+background-color: #333;
+flex-wrap: wrap;
+}
+nav a {
+color: white;
+text-decoration: none;
+padding: 14px 20px;
+display: block;
+transition: background 0.3s;
+}
+nav a:hover {
+background-color: #555;
+}
+section {
+padding: 40px 20px;
+max-width: 900px;
+margin: auto;
+}
+h2 {
+text-align: center;
+margin-bottom: 25px;
+}
+.package {
+border: 2px solid #ccc;
+border-radius: 12px;
+padding: 25px;
+margin-bottom: 25px;
+background-color: white;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+.package:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.package h3 {
+margin-top: 0;
+color: #222;
+}
+.package p {
+margin: 10px 0 15px 0;
+}
+.package button {
+display: block;
+margin: auto;
+padding: 12px 20px;
+background-color: #ff9900;
+color: white;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 1em;
+transition: background 0.3s;
+}
+.package button:hover {
+background-color: #e68a00;
+}
+.hours p, .contact-info p {
+text-align: center;
+margin: 8px 0;
+}
+.contact-info a {
+color: #222;
+text-decoration: none;
+font-weight: bold;
+}
+.contact-info a:hover {
+text-decoration: underline;
+}
+footer {
+background-color: #222;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+}
+@media(max-width:600px){
+nav {flex-direction: column;}
+.package button {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>N N Detailing</h1>
+<p>Norris & Nickerson – Premium Car Detailing Made Reasonable</p>
+<p class="highlight">Your Car Deserves the Best! Choose Exterior, Interior, or Combo Wash and drive away with a spotless car that turns heads!</p>
+</header>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#hours">Hours</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="services">
+<h2>Our Detailing Options</h2>
+
+<div class="package">
+<h3>Exterior Wash – $75</h3>
+<p>Hand wash & wax, tire shine & rims cleaned, windows & mirrors polished.</p>
+<button onclick="window.location='tel:5551234567'">Book Now</button>
+</div>
+
+<div class="package">
+<h3>Interior Wash – $75</h3>
+<p>Vacuum carpets & mats, wipe dashboard, doors & cup holders, clean seats & interior surfaces.</p>
+<button onclick="window.location='tel:5551234567'">Book Now</button>
+</div>
+
+<div class="package">
+<h3>Combo Wash – $150</h3>
+<p>Exterior & Interior Wash combined for the ultimate clean. Full wax, tire shine, vacuum, and wipe down.</p>
+<button onclick="window.location='tel:5551234567'">Book Now</button>
+</div>
+</section>
+
+<section id="hours">
+<h2>Working Hours</h2>
+<div class="hours">
+<p>Monday - Friday: 9am - 6pm</p>
+<p>Saturday: 10am - 4pm</p>
+<p>Sunday: Closed</p>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="contact-info">
+<p>Phone: <a href="tel:5551234567">(555) 123-4567</a></p>
+<p>Email: <a href="mailto:nn-detailing@example.com">nn-detailing@example.com</a></p>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2026 N N Detailing – Norris & Nickerson</p>
+</footer>
+
+</body>
+</html>
